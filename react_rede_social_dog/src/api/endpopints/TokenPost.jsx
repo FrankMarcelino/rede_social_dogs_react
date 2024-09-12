@@ -3,6 +3,7 @@ import React from "react";
 function TokenPost() {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const [token, setToken] = React.useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -12,10 +13,20 @@ function TokenPost() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({
+        username,
+        password,
+      }),
     })
-      .then((response) => response.json())
-      .then((json) => console.log(json));
+      .then((response) => {
+        console.log(response);
+        return response.json();
+      })
+      .then((json) => {
+        console.log(json);
+        setToken(json.token);
+        return json;
+      });
   }
 
   return (
@@ -34,6 +45,7 @@ function TokenPost() {
         onChange={({ target }) => setPassword(target.value)}
       />
       <button>Enviar</button>
+      <p style={{ wordBreak: "break-all" }}>{token}</p>
     </form>
   );
 }
