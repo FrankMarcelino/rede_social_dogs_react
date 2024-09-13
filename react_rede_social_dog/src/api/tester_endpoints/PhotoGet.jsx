@@ -18,7 +18,7 @@ const PhotoGet = () => {
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" />
-      <button>Enviar</button>
+      <button>Buscar</button>
     </form>
   );
 };

@@ -6,7 +6,7 @@ import PhotoGet from "./tester_endpoints/PhotoGet";
 const TesterApi = () => {
   return (
     <div>
-      <h2>User Posts</h2>
+      <h2>User Post</h2>
       <UserPost />
       <h2>Token Posts</h2>
       <TokenPost />
