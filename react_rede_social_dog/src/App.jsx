@@ -1,11 +1,11 @@
 import React from "react";
-import Api from "./api/Api";
+import TesterApi from "./api/TesterApi";
 import "./App.css";
 
 const App = () => {
   return (
     <div>
-      <Api />
+      <TesterApi />
     </div>
   );
 };
