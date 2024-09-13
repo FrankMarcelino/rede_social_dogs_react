@@ -1,8 +1,8 @@
 import React from "react";
-import UserPost from "./tester_endpopints/UserPost";
-import TokenPost from "./tester_endpopints/TokenPost";
-import PhotoPost from "./tester_endpopints/PhotoPost";
-import PhotoGet from "./tester_endpopints/PhotoGet";
+import UserPost from "./tester_endpoints/UserPost";
+import TokenPost from "./tester_endpoints/TokenPost";
+import PhotoPost from "./tester_endpoints/PhotoPost";
+import PhotoGet from "./tester_endpoints/PhotoGet";
 const TesterApi = () => {
   return (
     <div>
