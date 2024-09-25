@@ -1,11 +1,11 @@
 import React from "react";
 import UserHeaderNav from "./UserHeaderNav";
 import styles from "./UserHeader.module.css";
-import { useLocation } from "react-router-dom"; // Correção: importe o useLocation corretamente
+import { useLocation } from "react-router-dom";
 
 const UserHeader = () => {
   const [title, setTitle] = React.useState("");
-  const location = useLocation(); // Correção: "const" em vez de "cosnt"
+  const location = useLocation();
 
   React.useEffect(() => {
     const { pathname } = location;
