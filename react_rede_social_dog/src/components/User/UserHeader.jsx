@@ -9,17 +9,17 @@ const UserHeader = () => {
 
   React.useEffect(() => {
     const { pathname } = location;
-    let newTitle = "Minha conta"; // Valor padrão
+    let newTitle = "Meu PET"; // Valor padrão
 
     switch (pathname) {
       case "/conta/postar":
-        newTitle = "Poste sua foto";
+        newTitle = "Poste a foto do seu PET!";
         break;
       case "/conta/estatisticas":
         newTitle = "Estatísticas";
         break;
       case "/conta":
-        newTitle = "Minha conta";
+        newTitle = "Meu Pet";
         break;
       default:
         break;
