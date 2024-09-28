@@ -10,6 +10,7 @@ import User from "./components/User/User.jsx";
 import ProtectedRoute from "./components/Helper/ProtectedRoute.jsx";
 import Photo from "./components/Photo/Photo.jsx";
 import UserProfile from "./components/User/UserProfile.jsx";
+import NotFound from "./components/User/NotFound.jsx";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="login/*" element={<Login />} />
             <Route path="foto/:id" element={<Photo />} />
             <Route path="perfil/:user" element={<UserProfile />} />
+            <Route path="*" element={<NotFound />} />
             <Route
               path="conta/*"
               element={
