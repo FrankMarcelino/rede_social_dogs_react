@@ -31,7 +31,7 @@ const Feed = ({ user }) => {
       window.removeEventListener("wheel", infiniteScroll);
       window.removeEventListener("scroll", infiniteScroll);
     };
-  }, []);
+  }, [infinite]);
 
   return (
     <div>
@@ -44,6 +44,7 @@ const Feed = ({ user }) => {
           user={user}
           page={page}
           setModalPhoto={setModalPhoto}
+          setInfinite={setInfinite}
         />
       ))}
     </div>

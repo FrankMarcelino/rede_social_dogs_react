@@ -8,6 +8,7 @@ import Login from "./components/Login/Login.jsx";
 import UserStorage from "./UserContext";
 import User from "./components/User/User.jsx";
 import ProtectedRoute from "./components/Helper/ProtectedRoute.jsx";
+import Photo from "./components/Photo/Photo.jsx";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="login/*" element={<Login />} />
+            <Route path="foto/:id" element={<Photo />} />
             <Route
               path="conta/*"
               element={
