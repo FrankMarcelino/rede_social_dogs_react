@@ -103,3 +103,7 @@ a {
   display: 1;
 
 }
+
+.VictoryContainer {
+  height: initial !important;
+}
