@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import UserPhotoPost from "./UserPhotoPost";
 import UserStats from "./UserStats";
 import { UserContext } from "../../UserContext";
-import NotFound from "../User/NotFound";
+import NotFound from "../NotFound";
 
 const User = () => {
   const { data } = React.useContext(UserContext);

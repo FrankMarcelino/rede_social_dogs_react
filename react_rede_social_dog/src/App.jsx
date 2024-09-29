@@ -10,7 +10,7 @@ import User from "./components/User/User.jsx";
 import ProtectedRoute from "./components/Helper/ProtectedRoute.jsx";
 import Photo from "./components/Photo/Photo.jsx";
 import UserProfile from "./components/User/UserProfile.jsx";
-import NotFound from "./components/User/NotFound.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 const App = () => {
   return (
