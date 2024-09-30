@@ -5,7 +5,7 @@ import Loading from "../Helper/Loading";
 import { PHOTO_GET } from "../../Api";
 import { useParams } from "react-router-dom";
 import PhotoContent from "./PhotoContent";
-import Head from "../Helper/head";
+import Head from "../Helper/Head";
 
 const Photo = () => {
   const { id } = useParams();

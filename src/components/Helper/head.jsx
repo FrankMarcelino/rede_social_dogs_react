@@ -1,6 +1,6 @@
 import React from "react";
 
-const head = (props) => {
+const Head = (props) => {
   React.useEffect(() => {
     document.title = props.title + " | Rede Social para PET";
     document
@@ -9,4 +9,4 @@ const head = (props) => {
   }, [props]);
   return <></>;
 };
-export default head;
+export default Head;

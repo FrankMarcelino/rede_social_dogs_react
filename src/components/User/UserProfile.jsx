@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Head from "../Helper/head";
+import Head from "../Helper/Head";
 
 import Feed from "../Feed/Feed";
 
