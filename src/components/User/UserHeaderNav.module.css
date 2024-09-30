@@ -34,7 +34,7 @@
   border-color: #fb1;
 }
 
-.nav :global(a.active) svg>* {
+.nav :global(a.active) svg > * {
   fill: #fb1;
 }
 
@@ -114,8 +114,8 @@
   cursor: pointer;
 }
 
-.navMobile a:hover svg>*,
-.navMobile button:hover svg>* {
+.navMobile a:hover svg > *,
+.navMobile button:hover svg > * {
   fill: #fb1;
 }
 

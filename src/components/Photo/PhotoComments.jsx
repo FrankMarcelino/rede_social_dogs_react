@@ -1,9 +1,9 @@
-import React from "react";
-import { UserContext } from "../../UserContext";
-import PhotoCommentsForm from "./PhotoCommentsForm";
-import styles from "./PhotoComments.module.css";
+import React from 'react';
+import { UserContext } from '../../UserContext';
+import PhotoCommentsForm from './PhotoCommentsForm';
+import styles from './PhotoComments.module.css';
 
-const PhotoComments = (props, single) => {
+const PhotoComments = (props) => {
   const [comments, setComments] = React.useState(() => props.comments);
   const commentsSection = React.useRef(null);
   const { login } = React.useContext(UserContext);
@@ -16,7 +16,7 @@ const PhotoComments = (props, single) => {
     <>
       <ul
         ref={commentsSection}
-        className={`${styles.comments} ${props.single ? styles.single : ""}`}
+        className={`${styles.comments} ${props.single ? styles.single : ''}`}
       >
         {comments.map((comment) => (
           <li key={comment.comment_ID}>

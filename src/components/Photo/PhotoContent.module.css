@@ -49,7 +49,6 @@
     overflow-y: auto;
     grid-template-columns: minmax(20rem, 40rem);
   }
-
   .img {
     grid-row: 1;
   }

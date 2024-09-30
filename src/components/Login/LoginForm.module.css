@@ -5,12 +5,12 @@
 .perdeu {
   display: inline-block;
   color: #666;
+  padding: 0.5rem 0;
   line-height: 1;
-  padding: 0 0 0.5rem;
 }
 
 .perdeu::after {
-  content: "";
+  content: '';
   height: 2px;
   width: 100%;
   background: currentColor;
@@ -29,15 +29,15 @@
 
 .subtitle {
   font-family: var(--type-second);
-  font-size: 2rem;
   line-height: 1;
+  font-size: 2rem;
 }
 
 .subtitle::after {
-  content: "";
+  content: '';
+  display: block;
+  background: #ddd;
   height: 0.5rem;
   width: 3rem;
-  background: #fb1;
-  display: block;
   border-radius: 0.2rem;
 }

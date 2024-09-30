@@ -22,7 +22,6 @@
   .graph {
     grid-template-columns: 1fr;
   }
-
   .total {
     grid-column: 1;
   }

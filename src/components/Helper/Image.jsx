@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Image.module.css";
+import React from 'react';
+import styles from './Image.module.css';
 
 const Image = ({ alt, ...props }) => {
   const [skeleton, setSkeleton] = React.useState(true);
@@ -11,8 +11,8 @@ const Image = ({ alt, ...props }) => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.skeleton}></div>
-      <img onLoad={handleLoad} className={styles.img} alt="" {...props} />
+      {skeleton && <div className={styles.skeleton}></div>}
+      <img onLoad={handleLoad} className={styles.img} alt={alt} {...props} />
     </div>
   );
 };

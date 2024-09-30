@@ -1,12 +1,12 @@
-import React from "react";
-import styles from "./Footer.module.css";
-import FooterIcon from "../Assets/dogs-footer.svg?react";
+import React from 'react';
+import styles from './Footer.module.css';
+import Dogs from '../Assets/dogs-footer.svg?react';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <FooterIcon />
-      <p>Rede Social para PET. Alguns direitos reservados.</p>
+      <Dogs />
+      <p>Dogs. Alguns direitos reservados.</p>
     </footer>
   );
 };

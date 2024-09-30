@@ -1,32 +1,25 @@
-import React from "react";
-import UserHeaderNav from "./UserHeaderNav";
-import styles from "./UserHeader.module.css";
-import { useLocation } from "react-router-dom";
+import React from 'react';
+import UserHeaderNav from './UserHeaderNav';
+import styles from './UserHeader.module.css';
+import { useLocation } from 'react-router-dom';
 
 const UserHeader = () => {
-  const [title, setTitle] = React.useState("");
+  const [title, setTitle] = React.useState('');
   const location = useLocation();
 
   React.useEffect(() => {
     const { pathname } = location;
-    let newTitle = "Meu PET"; // Valor padrão
-
     switch (pathname) {
-      case "/conta/postar":
-        newTitle = "Poste a foto do seu PET!";
+      case '/conta/postar':
+        setTitle('Poste Sua Foto');
         break;
-      case "/conta/estatisticas":
-        newTitle = "Estatísticas";
-        break;
-      case "/conta":
-        newTitle = "Meu Pet";
+      case '/conta/estatisticas':
+        setTitle('Estatísticas');
         break;
       default:
-        break;
+        setTitle('Minha Conta');
     }
-
-    setTitle(newTitle);
-  }, [location.pathname]); // Dependência mais específica
+  }, [location]);
 
   return (
     <header className={styles.header}>
